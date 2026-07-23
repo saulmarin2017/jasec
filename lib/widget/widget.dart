@@ -1,0 +1,11 @@
+export 'package:jasec/widget/texboxform.dart';
+export 'package:jasec/widget/dialogo.dart';
+export 'package:jasec/widget/loading.dart';
+export 'package:jasec/widget/etiqueta.dart';
+export 'package:jasec/widget/kilometrajeinicio.dart';
+export 'package:jasec/widget/kilometrajefinal.dart';
+export 'package:jasec/widget/dialogoconfirmacion.dart';
+export 'package:jasec/widget/listaseleccion.dart';
+export 'package:jasec/widget/listaselecciontexto.dart';
+export 'package:jasec/widget/textboton.dart';
+export 'package:jasec/widget/zoom.dart';

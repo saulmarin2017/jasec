@@ -1,0 +1,13 @@
+{
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "sqltools.connections": [
+    {
+      "previewLimit": 500,
+      "driver": "SQLite",
+      "name": "SQLite",
+      "group": "siar",
+      "database": "jasec2025.db"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}

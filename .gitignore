@@ -1,0 +1,75 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Credenciales locales del handover (no subir secretos)
+docs/pendientes/*LOCAL*
+docs/pendientes/credenciales-LOCAL.md
+**/key.properties
+**/*.jks
+**/*.keystore
+
+# Grok Build / flujo de trabajo IA (local — no versionar)
+Grok-Build-Workflow.md
+grok.md
+.grok/
+
+# Notas y documentos de análisis / investigación interna
+# (handover, diagnóstico ORDS, planes, reuniones, SQL, manuales de trabajo)
+docs/pendientes/
+docs/Manual_VM_JASEC_SIAR*.docx
+docs/**/*analisis*
+docs/**/*análisis*
+*analisis*.md
+*análisis*.md
+
+# BD local y artefactos temporales de docs
+jasec2025.db
+_docx_unpack/
+*.db
+
+# Logs Android / crash
+**/hs_err_pid*.log
+**/replay_pid*.log

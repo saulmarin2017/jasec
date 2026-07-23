@@ -1,0 +1,16 @@
+export 'package:jasec/screen/ordenestrabajo.dart';
+export 'package:jasec/screen/solicitudesorden.dart';
+export 'package:jasec/screen/solicitudalumbradopublico.dart';
+export 'package:jasec/screen/seguimiento.dart';
+export 'package:jasec/screen/inicio.dart';
+export 'package:jasec/screen/login.dart';
+export 'package:jasec/screen/kpi.dart';
+export 'package:jasec/screen/atencionsolicitudserviciotecnico.dart';
+export 'package:jasec/screen/historialatencionsolicitud.dart';
+export 'package:jasec/screen/solicitudnoefectiva.dart';
+export 'package:jasec/screen/materialesposte.dart';
+export 'package:jasec/screen/materiales.dart';
+export 'package:jasec/screen/consultainventario.dart';
+export 'package:jasec/screen/crearrequisicion.dart';
+export 'package:jasec/screen/frmdatossistemamedicionindustrial.dart';
+export 'package:jasec/screen/frmdatossistemamedicionresidencial.dart';
