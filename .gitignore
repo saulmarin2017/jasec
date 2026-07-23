@@ -69,6 +69,8 @@ docs/**/*análisis*
 jasec2025.db
 _docx_unpack/
 *.db
+**/~$*.docx
+~$*
 
 # Logs Android / crash
 **/hs_err_pid*.log
