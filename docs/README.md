@@ -1,16 +1,12 @@
 # Documentación del proyecto JASEC / SIAR
 
-Carpeta para ir guardando documentación del proyecto: guías, notas de reuniones, decisiones técnicas, capturas de flujos, etc.
+Documentación **compartible** del proyecto (repo / VM del cliente).
 
-## Contenido
+## Contenido en este repositorio
 
 | Archivo / carpeta | Descripción |
 |-------------------|-------------|
-| [../Grok-Build-Workflow.md](../Grok-Build-Workflow.md) | **Flujo de trabajo Grok Build** (fuente de verdad; pendientes + ORDS al iniciar) |
-| [../grok.md](../grok.md) | Referencia histórica / compatibilidad (redirige al workflow) |
-| [pendientes/](pendientes/) | **Handover:** info importante, conexión ORDS, checklist de reunión y backlog |
-| `guia_rapida_configuracion.docx` | Guía ORDS, tokens, HTTPS y compilación del APK (copia de referencia) |
-| *(agregar aquí)* | Nuevos `.md`, `.docx`, `.pdf`, diagramas, etc. |
+| `guia_rapida_configuracion.docx` | Guía ORDS, tokens, HTTPS y compilación del APK (referencia) |
 
 ## Copia empaquetada en la app
 
@@ -18,16 +14,21 @@ La guía que usa la aplicación móvil está en:
 
 `assets/docs/guia_rapida_configuracion.docx`
 
-Si actualizás el Word, conviene mantener sincronizada la copia de `docs/` y la de `assets/docs/` (y registrar en `pubspec.yaml` si cambia el nombre del archivo).
+Si se actualiza el Word, mantener sincronizadas la copia de `docs/` y la de `assets/docs/` (y `pubspec.yaml` si cambia el nombre).
 
-## Convención de nombres
+## Qué no va en el repositorio (solo local Navasoft)
 
-- Usar minúsculas y guiones: `notas-sincronizacion-2026.md`
-- Fecha en el nombre si aplica: `reunion-2026-06-05.md`
-- Prefijos opcionales: `guia-`, `nota-`, `decision-`, `fix-`
+Estas carpetas/archivos están en **`.gitignore`** y **no** deben quedar en la VM del cliente al clonar:
 
-## Qué no guardar aquí
+- `Grok-Build-Workflow.md`, `grok.md` — flujo de trabajo con Grok Build  
+- `docs/pendientes/` — análisis, handover, reuniones, planes, manuales de trabajo internos  
+- Manuales VM de análisis (`docs/Manual_VM_JASEC_SIAR*.docx`)  
+- Bases locales (`*.db`), secretos y keystores  
 
-- Credenciales, contraseñas ni tokens en texto plano
-- Archivos generados por build (`build/`)
-- Bases de datos locales (`jasec2025.db`) salvo que sea una plantilla vacía acordada con el equipo
+Eso se conserva en la máquina de desarrollo de Navasoft, no se publica en el remoto que use JASEC.
+
+## Qué no guardar en docs versionados
+
+- Credenciales, contraseñas ni tokens en texto plano  
+- Archivos de build (`build/`)  
+- Bases de datos locales con datos reales  
