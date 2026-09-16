@@ -467,6 +467,9 @@ String tipoAplicacion = 'application/json';
 
 //CONEXION JASEC
 const String urlbase = 'srv-sifaj.jasec.go.cr';
+/// Cadena SSL incompleta en ORDS (igual que RRHH). true en debug y release;
+/// el callback solo acepta [urlbase], no cualquier servidor.
+const bool allowBadCertificates = true;
 const String usuarioClaveAuth2 =
     "Z3ZXbDZZeXVNeWRGYjFsZS1VdWNaZy4uOmhkTGZ0YkFxUDhjTS1MVVM0VmU2QUEuLg==";
 String protocolo = "https";

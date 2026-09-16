@@ -1,8 +1,6 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:jasec/class/omitircertificadohttps.dart';
+import 'package:jasec/class/http_overrides_setup.dart';
 import 'package:jasec/utilidades/publico.dart';
 import 'package:jasec/service/seguridad.dart';
 import 'package:jasec/route/approute.dart';
@@ -17,15 +15,13 @@ void main() {
   });*/
 
   WidgetsFlutterBinding.ensureInitialized();
+  // SSL limitado a srv-sifaj.jasec.go.cr (cadena incompleta en ORDS), como RRHH.
+  setupHttpOverrides();
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.landscapeRight,
   ]).then((_) {
-    //Ignora el certificado https
-    // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️ SOLO EN DEBUG, ESTO DESPROTEGE HTTPS, NO USAR EN PRODUCCION⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-    HttpOverrides.global = MyHttpOverrides();
-
     runApp(MyApp());
   });
 
