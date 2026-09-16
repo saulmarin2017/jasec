@@ -404,7 +404,7 @@ const String lblcorreoNoValido = 'Correo electrónico no valido.';
 const String lblexpresionRegularCorreo =
     r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
 const String lblnumeroMinimoCaracteresClave =
-    'Debe contener mínimo de 6 caracteres.';
+    'Debe contener mínimo de 3 caracteres.';
 const String lblformatoFecha = 'DD/MM/YYYY';
 const String lblformatoFechaInvalido =
     'El formato de fecha debe ser $lblformatoFecha';

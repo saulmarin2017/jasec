@@ -151,7 +151,7 @@ class TextBoxForm extends StatelessWidget {
         }
 
         if (tipo == TextInputType.visiblePassword) {
-          if (value!.length < 4) {
+          if (value!.length < 3) {
             return lblnumeroMinimoCaracteresClave;
           }
         }
